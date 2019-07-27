@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  background: #bb1333;
+  width: 472px;
+  height: 709px;
+  border: 3px solid #55596d;
+  border-radius: 15px;
+  img {
+    margin: 25px;
+  }
+  button{
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      color: white;
+      border: 1px solid black;
+      margin: 10px;
+      font-size: 40px;
+      box-shadow: 1px 3px 0 black;
+  }
+  .display {
+    background: #55596d;
+    color: white;
+    width: 80%;
+    margin: 0 auto 25px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    p {
+      text-align: right;
+      width: 95%;
+    }
+  }
+  .calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .calcLeft {
+      display: flex;
+      flex-flow: column wrap;
+      width: 66%;
+      .numbersDiv{
+          display: flex;
+          flex-flow: row wrap;
+          button{
+              background: #0c3c78;
+              &:nth-child(10){
+                  width: 175px;
+              }
+          }
+      }
+      .specDiv{
+          button{
+              background: #1a61b0;
+          }
+      }
+    }
+    .calcRight {
+      .opsDiv {
+        display: flex;
+        flex-direction: column;
+        button{
+            background: #3ab5e5;
+        }
+      }
+    }
+  }
+}
